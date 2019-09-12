@@ -1,6 +1,6 @@
 
 #include "pch.h"
 #include "stats.h"
-#include <stdlib.h>     /* srand, rand */
+#include <stdlib.h>    
 #include <time.h> 
 

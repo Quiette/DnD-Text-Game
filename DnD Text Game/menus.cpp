@@ -12,21 +12,19 @@ void start(int &choice, bool statsmade, int st []){
 	cout << "1. Paladin		2. Rogue		3. Ranger 		4. Monk 		5. Wizard\n";
 	cin >> choice;
 	while (cin.fail() ||choice < 1 || choice>5 ) { //invalid choice
-		cin.clear();
-		cin.ignore(999, '\n');
-		cout << "That is not a valid class option yet, Brave Hero.\n";
+		cin.clear(); //clear error flag
+		cin.ignore(numeric_limits<streamsize>::max(), '\n'); //clear entry until "\n"
+		cout << "That is not a valid class option, Brave Hero.\n";
 		cout << "Choose your class (Press the corresponding number):\n";
 		cout << "1. Paladin		2. Rogue		3. Ranger 		4. Monk 		5. Wizard\n";
 		cin >> choice;
 	}
 	cout << "You have picked: ";
-	if (statsmade == false){
+	if (statsmade == false){ //if no stats created, create stats; if created don't allow for rerolling/minmaxing
 		setstatarray(st);
 		statsmade = true;
 	}
-	else {
-		//do nothing
-	}
+	
 	string cl;
 	switch(choice) {
 		case 1: //paladin choice
@@ -62,7 +60,7 @@ void start(int &choice, bool statsmade, int st []){
 		cout << "Thank you for confirming. You have chosen the " << cl << " class\n";
 	}
 	else {
-		cin.ignore();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n'); //clear entry until "\n"
 		start(choice, true, st);
 	}
 	return;

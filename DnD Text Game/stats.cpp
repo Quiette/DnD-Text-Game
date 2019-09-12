@@ -81,34 +81,34 @@ void statbreakdown(int stat[], int c) {
 	switch(c){
 	case 1: //Paladin choice
 		cout << "STR: "<<stat[0] << "	DEX: " << stat[4] << "	CON: " << stat[1] << "	WIS: " 
-			<< stat[2] << "	INT: " << stat[5] << "	CHA: " << stat[3] << "\n";
+			<< stat[2] << "	INT: " << stat[5] << "	CHA: " << stat[3] << "\n\n";
 		cout << "A paladin is a holy knight, crusading in the name of good and order. Wielding a mighty sword, "
 			"they are a force to be reckoned with, serving as beacons for their allies"
-			"within the chaos of battle.\n";
+			"within the chaos of battle.\n\n";
 		cout << "SPECIAL: You can detect evil afoot.\n";
 		break;
 	case 2:  //rougue choice
 		cout << "STR: " << stat[4] << "	DEX: " << stat[0] << "	CON: " << stat[2] << "	WIS: "
-			<< stat[3] << "	INT: " << stat[5] << "	CHA: " << stat[1] << "\n";
+			<< stat[3] << "	INT: " << stat[5] << "	CHA: " << stat[1] << "\n\n";
 		cout << "Ever just one step ahead of danger, rogues bank on their cunning, "
 			"skill, and charm to bend fate to their favor. Never knowing what to expect, "
 			"they prepare for everything, becoming masters of a wide variety of skills, training themselves to be "
 			"adept manipulators, agile acrobats, shadowy stalkers, or masters of any of dozens of other professions or talents."
-			"Rogues excel at moving about unseen and catching foes unaware, and tend to avoid head-to-head combat.\n";
+			"Rogues excel at moving about unseen and catching foes unaware, and tend to avoid head-to-head combat.\n\n";
 			cout << "SPECIAL: If you flank an opponent, you deal double damage.\n";
 		break;
 	case 3:  //ranger choice
 		cout << "STR: " << stat[1] << "	DEX: " << stat[0] << "	CON: " << stat[4] << "	WIS: "
-			<< stat[2] << "	INT: " << stat[3] << "	CHA: " << stat[5] << "\n";
+			<< stat[2] << "	INT: " << stat[3] << "	CHA: " << stat[5] << "\n\n";
 		cout << "SPECIAL: You can track any manner of footprints back to the source.\n";
 		break;
 	case 4: //monk choice
 		cout << "STR: " << stat[0] << "	DEX: " << stat[2] << "	CON: " << stat[3] << "	WIS: "
-			<< stat[4] << "	INT: " << stat[1] << "	CHA: " << stat[5] << "\n";
+			<< stat[4] << "	INT: " << stat[1] << "	CHA: " << stat[5] << "\n\n";
 		break;
 	case 5: //wizard choice
 		cout << "STR: " << stat[5] << "	DEX: " << stat[2] << "	CON: " << stat[3] << "	WIS: "
-			<< stat[1] << "	INT: " << stat[0] << "	CHA: " << stat[4] << "\n";
+			<< stat[1] << "	INT: " << stat[0] << "	CHA: " << stat[4] << "\n\n";
 		break;
 	}
 }
