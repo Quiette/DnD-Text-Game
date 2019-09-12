@@ -4,8 +4,8 @@
 #include <iostream>
 using namespace std;
 
-void start(int &choice, bool statsmade, int st [])
-{
+//Intro Menu. Selects Class and finds stats
+void start(int &choice, bool statsmade, int st []){
 	bool confirm = false;
 	cout <<"Welcome to your Dungeons and Dragon Adventure!\n";
 	cout << "Choose your class (Press the corresponding number):\n";
@@ -25,6 +25,7 @@ void start(int &choice, bool statsmade, int st [])
 		statsmade = true;
 	}
 	else {
+		//do nothing
 	}
 	string cl;
 	switch(choice) {
@@ -67,8 +68,8 @@ void start(int &choice, bool statsmade, int st [])
 	return;
 }
 
-void nameselect(string &name)
-{
+//Gives player a name
+void nameselect(string &name){
 	cout << "What is the name of the hero that the legends speak about?\n";
 		cin >> name;
 		while (cin.fail()) {
