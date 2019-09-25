@@ -1,5 +1,5 @@
 # DnD-Text-Game
-Navigate a DnD 3.5 world, fight enemies and explore in text
+Navigate a DnD 3.5 world, fight enemies and explore in text (WIP)
 
 Created: August 24, 2019
 
